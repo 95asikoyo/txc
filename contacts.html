@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contacts</title>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=0725 706 035" />
+    <meta
+      name="keywords"
+      content="Tuition in Nairobi,IGCSE tuition in Nairobi, Homeschool and tuition in Nairobi, Tuition center' Online tuition, Tuition places near me, Tutors in Nairobi, Holiday tuition in Nairobi, Math tutors in Nairobi, Part time tutors"
+    />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/contact-form.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <script src="wow.js"></script>
+    <script>
+      $(document).ready(function () {
+        if ($("html").hasClass("desktop")) {
+          new WOW().init();
+        }
+      });
+    </script>
+    <!--<![endif]-->
+
+    <script src="js/modal.js"></script>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KSTJFXB"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <section id="content" class="content_pages2">
+      <!--========================================================
+														HEADER
+	=========================================================-->
+      <header id="header">
+        <div id="stuck_container">
+          <div class="container">
+            <div class="row">
+              <div class="grid_7 preffix_1">
+                <h1>
+                  <a href="index.html"
+                    ><img
+                      src="./IMG/STEM2.png"
+                      alt="GrowUp"
+                      style="width: auto; height: 300px"
+                  /></a>
+                </h1>
+                <nav>
+                  <ul class="sf-menu">
+                    <li>
+                      <a href="index.html">Home<strong></strong></a>
+                    </li>
+                    <li>
+                      <a href="about.html">About us<strong></strong></a>
+                    </li>
+                    <li>
+                      <a href="services.html">Services<strong></strong></a>
+                    </li>
+                    <li id="last-li" class="current">
+                      <a href="contacts.html">Contact Us<strong></strong></a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="grid_4">
+                <p class="txt1">
+                  0724 <span class="color1">369 213</span> <br />0732
+                  <span class="color1">964 524</span>
+                </p>
+                <p class="txt2">
+                  Yellow Plaza <br />Lang'ata, Nairobi
+                  <br />angiramarx@gmail.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--========================================================
+													CONTENT
+	=========================================================-->
+
+      <div class="wrapper">
+        <section class="content_map">
+          <div class="google-map-api">
+            <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31910.08766902927!2d36.783956738205674!3d-1.319114373030801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1slangata%20shopping%20mall%20embed!5e0!3m2!1sen!2ske!4v1609666525072!5m2!1sen!2ske"
+              width="100%"
+              height="450"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+        </section>
+
+        <div class="row mobile_pad1">
+          <div class="grid_10 preffix_1">
+            <h2>Contact form</h2>
+
+            <form
+              id="contact-form"
+              class="rd-mailform"
+              data-form-output="form-output-global"
+              data-form-type="contact"
+              method="post"
+              action="bat/rd-mailform.php"
+            >
+              <div class="contact-form-loader"></div>
+              <fieldset>
+                <div class="wrapper">
+                  <div class="col6">
+                    <label class="name">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Name:"
+                        value=""
+                        data-constraints="@Required"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="col6">
+                    <label class="email">
+                      <input
+                        type="text"
+                        name="email"
+                        placeholder="E-mail:"
+                        value=""
+                        data-constraints="@Email @Required"
+                      />
+                    </label>
+                  </div>
+                  <div class="col6 last">
+                    <label class="phone">
+                      <input
+                        type="text"
+                        name="phone"
+                        placeholder="Phone:"
+                        value=""
+                        data-constraints="@Numeric @Required"
+                      />
+                    </label>
+                  </div>
+                </div>
+
+                <label class="message">
+                  <textarea
+                    name="message"
+                    placeholder="Message:"
+                    data-constraints="@Required"
+                  ></textarea>
+                </label>
+
+                <div class="btns">
+                  <button class="more_btn" type="reset">Clear</button>
+                  <button class="more_btn" type="submit">Send</button>
+                </div>
+              </fieldset>
+              <div class="modal fade response-message">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-hidden="true"
+                      >
+                        &times;
+                      </button>
+                      <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                      You message has been sent! We will be in touch soon.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+    </section>
+
+    <!--========================================================
+													FOOTER
+=========================================================-->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="grid_4 wow fadeInLeft" data-wow-delay="0.7s">
+            <h1>
+              <a href="index.html"
+                ><img
+                  src="./IMG/STEM2.png"
+                  alt="GrowUp"
+                  style="width: auto; height: 200px"
+              /></a>
+            </h1>
+          </div>
+
+          <div class="grid_3 wow fadeInLeft" data-wow-delay="0.4s">
+            <h4>contact us</h4>
+            <p class="txt1">
+              0724 <span class="color1">369 213</span> <br />0732
+              <span class="color1">964 524</span>
+            </p>
+          </div>
+
+          <div class="grid_4 wow fadeInLeft" data-wow-delay="0.1s">
+            <h4>location</h4>
+            <p class="txt2">
+              Yellow Plaza <br />Lang'ata, Nairobi <br />angiramarx@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // Initialize the gallery
+        $(".magnifier2").touchTouch();
+      });
+    </script>
+
+    <script src="js/rd-mailform.js"></script>
+
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+  </body>
+</html>
